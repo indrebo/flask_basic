@@ -24,7 +24,7 @@ class Book(db.Model):
     title = db.Column(db.String(500), nullable=False, index=True)
     author = db.Column(db.String(350))
     avg_rating = db.Column(db.Float)
-    format = db.Column(db.String(50))
+    book_format = db.Column(db.String(50))
     image = db.Column(db.String(100), unique=True)
     num_pages = db.Column(db.Integer)
     pub_date = db.Column(db.DateTime, default=datetime.utcnow())
